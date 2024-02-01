@@ -1,4 +1,5 @@
 import React from "react";
+import "./test.model.css";
 
 export const TestModel = (): React.ReactElement => {
 	React.useEffect((): () => void => {

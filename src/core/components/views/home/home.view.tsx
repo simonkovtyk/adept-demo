@@ -1,5 +1,6 @@
 import React from "react";
 import { TestModel } from "../../models/test/test.model.tsx";
+import Style from "./home.view.module.css";
 
 export const HomeView = () => {
 	const [ count, setCount ] = React.useState<number>(0);
@@ -22,7 +23,7 @@ export const HomeView = () => {
 
 	return (
 		<React.Fragment>
-			<h1 ref={ refH1 }>Fick dich!</h1>
+			<h1 className={ Style.headline } ref={ refH1 }>Fick dich!</h1>
 			<p>Anzahl: { count }</p>
 			<button onClick={ (): void => setCount(count + 1) }>Klick</button>
 			{ displayTestModel === 0 && <TestModel /> }
